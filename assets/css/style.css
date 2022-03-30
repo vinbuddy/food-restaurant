@@ -377,6 +377,12 @@
 
 .book__input-date {
     width: 100%;
+    display:block;
+  
+    /* Solution display on safari */
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    min-height: 53.2px; 
 }
 
 .book__option-box {
