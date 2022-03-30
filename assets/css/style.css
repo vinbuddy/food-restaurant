@@ -382,6 +382,7 @@
     display:block;
     content: attr(placeholder);
     color: #222831;
+    background-color: #fff;
     -webkit-appearance: textfield;
     -moz-appearance: textfield;
     min-height: 53.2px; 
