@@ -24,6 +24,7 @@
 }
 
 .header__nav {
+    height: 80px;
     position: absolute;
     left: 0;
     top: 0;
@@ -31,6 +32,7 @@
 }
 
 .header__nav-wrap {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
