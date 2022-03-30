@@ -395,6 +395,8 @@
 
     /* fix display on safari */
     display:block;
+    text-align: -webkit-left;
+    text-align: left !important;
     color: #222831;
     background-color: #fff;
     -webkit-appearance: textfield;
@@ -414,6 +416,9 @@
 
     /* fix display on safari */
     display:block;
+    
+    text-align: -webkit-left;
+    text-align: left !important;
     background-color: #fff;
     -webkit-appearance: textfield;
     -moz-appearance: textfield;
