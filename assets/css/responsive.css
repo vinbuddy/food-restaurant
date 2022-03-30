@@ -641,7 +641,15 @@
         display: block;
     }
 
-    
+    .book__input-time,
+    .book__input-date {
+        margin: 14px 0;
+    }
+
+    .book__option-field {
+        margin-bottom: 14px;
+    }
+
 }
 
 @media (min-width: 570px) and (max-width: 740px) {
@@ -786,6 +794,11 @@
     .sale__img {
         margin-right: 0;
         margin-bottom: 10px;
+    }
+
+    .book__title,
+    .book__btn {
+        text-align: center;
     }
 
     .about__img {

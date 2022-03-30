@@ -20,6 +20,10 @@ const navbar = $('.header__nav')
 const navItems = $$('.header__item')
 const navMenuItems = $$('.header__menu-item')
 
+const inputDate = $('.book__input-date')
+const inputTime = $('.book__input-time')
+
+
 
 // filter food
 function filterFood() {
@@ -125,12 +129,24 @@ function activeCurrentSection() {
     })
 }
 
+function setCurrentTime() {
+    let date = new Date()
+    let currentDate = date.toISOString().slice(0, 10) // lấy ngày và cắt chuỗi
+    let currentTime = date.toISOString().slice(11, 16)
+    window.onload = function () {
+        inputDate.value = currentDate
+        inputTime.value = currentTime
+    }
+
+}
+
 function start() {
     filterFood()
     select()
     openMenu()
     scrollNavbar()
     activeCurrentSection()
+    setCurrentTime()
 }
 
 start()

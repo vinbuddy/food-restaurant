@@ -45,6 +45,7 @@ html {
     font-size: 16px;
     color: #fff;
     min-width: 180px;
+    max-width: 260px;
     padding: 13px 37px;
     background-color: #ffbe33;
     border: none;
