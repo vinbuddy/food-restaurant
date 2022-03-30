@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+.fixed-nav {
+    z-index: 11;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #1b2029;
+    transform-origin: top;
+    animation: navAppear ease 0.3s;
+}
+
+@keyframes navAppear {
+    from {
+        transform: translateY(-80px);
+    } to {
+        transform: translateY(0);   
+    }
+}
+
+
+.mg-15 {
+    margin: 0 -15px;
+}
+
+.header__item.header__item--active {
+    color: #ffbe33;
+}
+
+.header__menu-item.header__item--active {
+    color: #ffbe33;
+}
+
+.food-btn {
+    font-size: 16px;
+    color: #fff;
+    min-width: 180px;
+    padding: 13px 37px;
+    background-color: #ffbe33;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: ease 0.7s;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+}
+
+.food-btn:hover {
+    background-color: #e69c00;
+}
+
+.menu__type.menu__type--active {
+    color: #fff;
+    background-color: #222831;
+    transition: all 0.4s;
+}
+
+/* swipper custom */
+.swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
+    background-color: #fff !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+    width: 20px !important;
+    height: 20px !important;
+    background-color: var(--primary-color) !important;
+    position: relative;
+    top: 3px;
+}
+
+.swiper-pagination {
+    position: unset !important;
+    text-align: unset !important;
+    margin-top: 100px;
+}
+
+.swiper-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 70px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: 45px !important;
+    height: 45px !important;
+    top: 100%;
+    position: unset !important;
+    color: #fff !important;
+    border-radius: 100%;
+    background-color: var(--primary-color);
+    margin: 0 8px;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 20px !important;
+    font-weight: 700;
+}

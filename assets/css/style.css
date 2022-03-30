@@ -1,0 +1,620 @@
+:root {
+    --heading-font: 'Dancing Script';
+    --primary-color: #ffbe33;
+}
+
+.app {
+    overflow: hidden;
+}
+
+.header {
+    overflow: hidden;
+}
+
+.header__background {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 750px;
+    background-image: url('../img/food-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    margin-top: -33px;
+}
+
+.header__nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.header__nav-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    width: 100px;
+}
+
+.header__list {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header__item {
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    padding: 2px 8px;
+    margin: 0 10px;
+    transition: ease 0.7s;
+}
+
+.header__item:hover {
+    color: var(--primary-color);
+}
+
+.header__icon {
+    color: #fff;
+    padding: 2px 4px;
+    margin: 0 7px;
+    cursor: pointer;
+    transition: ease 0.7s;
+
+}
+
+.header__icon:hover {
+    color: var(--primary-color);
+}
+
+.header__overlay {
+    z-index: 11;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+.header__menu-btn {
+    color: #fff;
+    font-size: 40px;
+    padding: 4px 10px;
+    display: none;
+}
+
+.header__menu {
+    z-index: 12;
+    position: fixed;
+    width: 350px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px 30px;
+    background-color: #222831;
+    transform: translateX(100%);
+    transition: all linear 0.4s;
+}
+
+.header__menu.open-menu {
+    transform: translateX(0);
+}
+
+.header__close-btn {
+    font-size: 35px;
+    color: #fff;
+    text-align: right;
+}
+
+.header__menu-list {
+    margin: 35px 0;
+    padding-left: 50px;
+}
+
+.header__menu-item {
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    transition: ease 0.7s;
+}
+
+.header__menu-user {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.slider {
+    padding-top: 200px;
+}
+
+.slide__title {
+    font-family: var(--heading-font);
+    color: #fff;
+    font-size: 60px;
+}
+
+.slide__desc {
+    width: 40%;
+    color: #fff;
+    font-size: 14.5px;
+    line-height: 1.5;
+    margin: 22px 0;
+}
+
+
+.container {
+    padding-top: 80px;
+}
+
+.offers {
+    padding-bottom: 95px;
+}
+
+.sale {
+    display: flex;
+    align-items: center;
+    background-color: #222831;
+    padding: 20px 15px;
+    border-radius: 7px;
+}
+
+.sale:hover .sale__img img {
+    transform: scale(1.1);
+}
+
+.sale__img {
+    width: 170px;
+    height: 170px;
+    border-radius: 100%;
+    border: 5px solid var(--primary-color);
+    margin-right: 15px;
+    overflow: hidden;
+}
+
+.sale__img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    transition: all ease 0.3s;
+}
+
+.sale__name {
+    font-family: var(--heading-font);
+    font-size: 27px;
+    color: #fff;
+}
+
+.sale__percent {
+    font-family: var(--heading-font);
+    font-size: 45px;
+    font-weight: 700;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.sale__percent span {
+    font-family: var(--heading-font);
+    font-size: 26px;
+    color: #fff;
+}
+
+.sale__icon {
+    margin-left: 5px;
+}
+
+.menu {
+    padding-bottom: 90px;
+}
+
+.menu__title {
+    width: 100%;
+    font-family: var(--heading-font);
+    font-size: 40px;
+    text-align: center;
+}
+
+.menu__filter {
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    margin: 50px 0;
+}
+
+.menu__type {
+    display: inline-block;
+    padding: 10px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.menu__card {
+    background: linear-gradient(to bottom, #f1f2f3, #222831 25px);
+    border-radius: 14px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.menu__card:hover .menu__img img {
+    transform: scale(1.1)
+}
+
+.menu__img {
+    display: flex;
+    width: 100%;
+    height: 220px;
+    padding: 25px;
+    background-color: #f1f2f3;
+    border-bottom-left-radius: 45px;
+    overflow: hidden;
+}
+
+.menu__img img {
+    max-height: 145px;
+    margin: auto;
+    transition: all ease 0.3s;
+}
+
+.menu__info {
+    padding: 25px;
+    color: #fff;
+}
+
+.menu__name {
+    margin-bottom: 10px;
+}
+
+.menu__desc {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.menu__option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 14px;
+}
+
+.menu__price {
+    font-size: 17px;
+}
+
+.menu__cart {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 2.4;
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+.menu__view {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.about {
+    width: 100%;
+    background-color: #222831;
+    padding: 90px 0;
+}
+
+.about__img img {
+    width: 100%;
+    max-width: 445px;
+    margin: auto;
+}
+
+.about__info {
+    display: flex;
+    height: 100%;
+}
+
+.about__info div {
+    margin: auto;
+}
+
+.about__title {
+    font-family: var(--heading-font);
+    font-size: 45px;
+    font-weight: 600;
+    color: #fff;
+    
+}
+
+.about__text {
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.5;
+    margin: 22px 0;
+}
+
+.book {
+    padding: 90px 0;
+}
+
+.book__title {
+    font-family: var(--heading-font);
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+
+.book__input {
+    font-size: 16px;
+    color: #222831;
+    width: 100%;
+    padding: 14px 20px;
+    margin-bottom: 28px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.book__input::placeholder {
+    color: #222831;
+}
+
+.book__input:focus {
+    outline: 3px solid var(--primary-color);
+}
+
+.book__input-date {
+    width: 100%;
+}
+
+.book__option-box {
+    position: relative;
+
+}
+
+.book__option-field {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #222831;
+    padding: 14px 20px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.book__option-icon {
+    transition: all ease 0.3s;
+}
+
+.book__option-icon.rotate {
+    transform: rotate(180deg);
+}
+
+.book__option-list {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: calc(100% + 5px);
+    list-style: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    pointer-events: none;
+    opacity: 0;
+    transition: all ease-in 0.2s;
+    transform-origin: top right;
+    transform: scale(0.75) translateY(-30px);
+}
+
+.book__option-title {
+    padding: 10px 22px;
+    font-weight: 700;
+    color: rgb(114, 111, 111);
+    cursor: default;
+}
+
+.book__option-list.open {
+    opacity: 1;
+    pointer-events: all;
+    transform: scale(1) translateY(0);
+}
+
+.book__option-item {
+    font-weight: 500;
+    padding: 10px 22px;
+    cursor: pointer;
+}
+
+.book__option-item:hover {
+    background-color: #f6f6f6;
+}
+
+.book__option-item.book__option-item--selected {
+    font-weight: 700;
+}
+
+.book__input-date {
+    font-size: 16px;
+    color: #222831;
+    width: 100%;
+    padding: 14px 20px;
+    margin-bottom: 28px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 28px;
+}
+
+.book__map {
+    max-height: 362px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.customer {
+    overflow: hidden;
+    padding: 90px 0;
+}
+
+.customer__title {
+    font-family: var(--heading-font);
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.customer__card {
+    padding: 0 33px;
+}
+
+.customer__form {
+    background-color: #222831;
+    padding: 25px;
+    border-radius: 7px;
+    color: #f1f2f3;
+}
+
+.customer__form span {
+    font-size: 14px;
+}
+
+.customer__text {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.customer__name {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.customer__img {
+    position: relative;
+    width: 115px;
+    height: 115px;
+    margin-top: 30px;
+    border-radius: 100%;
+
+}
+
+.customer__img::before {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #ffbe33;
+    -webkit-transform: rotate(45deg) translateX(-50%);
+    transform: rotate(45deg) translateX(-50%);
+}
+
+.customer__img img {
+    z-index: 3;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: 5px solid var(--primary-color);
+}
+
+.footer {
+    background-color: #222831;
+    padding-top: 90px;
+    margin-top: 90px;
+}
+
+.footer__col {
+    text-align: center;
+}
+
+
+
+.footer__heading {
+    font-family: var(--heading-font);
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.footer__contact {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 6px 0;
+    transition: all 0.3s;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.footer__contact:hover {
+    color: var(--primary-color);
+}
+
+.footer__logo {
+    width: 90px;
+    height: 90px;
+}
+
+.footer__about {
+    color: #fff;
+    line-height: 1.5;
+    font-size: 17px;
+}
+
+.footer__hours {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer__socials {
+    margin-top: 20px;
+}
+
+.footer__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #fff;
+    color: #222831;
+    padding: 7px;
+    margin: 0 2px;
+    transition: all 0.3s;
+
+}
+
+
+.footer__icon:hover {
+    color: var(--primary-color);
+}
+
+.footer__copyright {
+    text-align: center;
+    padding: 40px;
+}
+
+.footer__text {
+    color: #fff;
+    margin: 14px 0;
+}

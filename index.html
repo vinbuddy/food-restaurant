@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- swipper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+
+    <link rel="icon" href="./assets/img/logo.png" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+</head>
+<body>
+    <div class="app">
+        <header id="home" class="header">
+            <nav class="header__nav">
+                <div class="header__nav-wrap grid wide">
+                    <a href="#">
+                        <img src="./assets/img/logo.png" alt="" class="header__logo">
+                    </a>
+                    <div class="header__list">
+                        <a href="#home" class="header__item header__item--active">HOME</a>
+                        <a href="#menu" class="header__item">MENU</a>
+                        <a href="#about" class="header__item">ABOUT</a>
+                        <a href="#book" class="header__item">BOOK TABLE</a>
+    
+                    </div>
+    
+                    <div class="header__user">
+                        <i class="header__icon fa-solid fa-user"></i>
+                        <i class="header__icon fa-solid fa-cart-shopping"></i>
+                        <i class="header__icon fa-solid fa-magnifying-glass"></i>
+                        <button class="food-btn">Order online</button>
+                    </div>
+    
+                    <div class="header__menu-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="header__overlay"></div>
+
+            <nav class="header__menu">
+                <div class="header__close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+
+                <div class="header__menu-list">
+                    <a href="#home" class="header__menu-item header__item--active">HOME</a>
+                    <a href="#menu" class="header__menu-item">MENU</a>
+                    <a href="#about" class="header__menu-item">ABOUT</a>
+                    <a href="#book" class="header__menu-item">BOOK TABLE</a>
+                </div>
+
+                <div class="header__menu-user">
+                    <i class="header__icon fa-solid fa-user"></i>
+                    <i class="header__icon fa-solid fa-cart-shopping"></i>
+                    <i class="header__icon fa-solid fa-magnifying-glass"></i>
+                    <button class="food-btn">Order online</button>
+                </div>
+            </nav>
+
+            <div class="header__background">
+                <section class="slider grid wide">
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide">
+                            <h1 class="slide__title">Fast Food Restaurent</h1>
+                            <p class="slide__desc">Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.</p>
+                            <button class="food-btn">Order online</button>
+                          </div>
+        
+                          <div class="swiper-slide">
+                            <h1 class="slide__title">Fast Food Restaurent</h1>
+                            <p class="slide__desc">Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.</p>
+                            <button class="food-btn">Order online</button>
+                          </div>
+        
+                          <div class="swiper-slide">
+                            <h1 class="slide__title">Fast Food Restaurent</h1>
+                            <p class="slide__desc">Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.</p>
+                            <button class="food-btn">Order online</button>
+                          </div>
+                          
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                      
+                      
+                    </div>
+                </section>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="grid wide">
+                <!-- Sale -->
+                <section class="offers">
+                    <div class="row">
+                        <div class="col c-12 m-6 l-6">
+                            <div class="sale">
+                                <div class="sale__img">
+                                    <img src="./assets/img/sale1.jpg" alt="">
+                                </div>
+    
+                                <div class="sale__info">
+                                    <h2 class="sale__name">Tasty Thursdays</h2>
+                                    <p class="sale__percent">20% <span>off</span></p>
+                                    <button class="food-btn">Order Now <i class="sale__icon fa-solid fa-cart-shopping"></i></button>
+    
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col c-12 m-6 l-6">
+                            <div class="sale">
+                                <div class="sale__img">
+                                    <img src="./assets/img/sale2.jpg" alt="">
+                                </div>
+    
+                                <div class="sale__info">
+                                    <h2 class="sale__name">Pizza Days</h2>
+                                    <p class="sale__percent">15% <span>off</span></p>
+                                    <button class="food-btn">Order Now <i class="sale__icon fa-solid fa-cart-shopping"></i></button>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Menu -->
+                <section id="menu" class="menu">
+                    <h1 class="menu__title">Our Menu</h1>
+                    <ul class="menu__filter">
+                        <li class="menu__type menu__type--active">All</li>
+                        <li class="menu__type">Burger</li>
+                        <li class="menu__type">Pizza</li>
+                        <li class="menu__type">Pasta</li>
+                        <li class="menu__type">Fries</li>
+                    </ul>
+
+                    <div class="row">
+                        <div class="menu__food m-6 col l-4" data-food="pizza">
+                            <div class="menu__card">
+                                <div class="menu__img">
+                                    <img src="./assets/img/menu1.png" alt="">
+                                </div>
+
+                                <div class="menu__info">
+                                    <h3 class="menu__name">Delicious Pizza</h3>
+                                    <p class="menu__desc">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+                                    <div class="menu__option">
+                                        <span class="menu__price">$30</span>
+                                        <a href="" class="menu__cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu__food m-6 col l-4"  data-food="burger">
+                            <div class="menu__card">
+                                <div class="menu__img">
+                                    <img src="./assets/img/menu2.png" alt="">
+                                </div>
+
+                                <div class="menu__info">
+                                    <h3 class="menu__name">Delicious Burger</h3>
+                                    <p class="menu__desc">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+                                    <div class="menu__option">
+                                        <span class="menu__price">$30</span>
+                                        <a href="" class="menu__cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu__food m-6 col l-4"  data-food="pizza">
+                            <div class="menu__card">
+                                <div class="menu__img">
+                                    <img src="./assets/img/menu3.png" alt="">
+                                </div>
+
+                                <div class="menu__info">
+                                    <h3 class="menu__name">Delicious Burger</h3>
+                                    <p class="menu__desc">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+                                    <div class="menu__option">
+                                        <span class="menu__price">$30</span>
+                                        <a href="" class="menu__cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu__food m-6 col l-4"  data-food="pasta">
+                            <div class="menu__card">
+                                <div class="menu__img">
+                                    <img src="./assets/img/menu4.png" alt="">
+                                </div>
+
+                                <div class="menu__info">
+                                    <h3 class="menu__name">Delicious Burger</h3>
+                                    <p class="menu__desc">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+                                    <div class="menu__option">
+                                        <span class="menu__price">$30</span>
+                                        <a href="" class="menu__cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu__food m-6 col l-4" data-food="fries">
+                            <div class="menu__card">
+                                <div class="menu__img">
+                                    <img src="./assets/img/menu5.png" alt="">
+                                </div>
+
+                                <div class="menu__info">
+                                    <h3 class="menu__name">Delicious Burger</h3>
+                                    <p class="menu__desc">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+                                    <div class="menu__option">
+                                        <span class="menu__price">$30</span>
+                                        <a href="" class="menu__cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu__food m-6 col l-4"  data-food="pizza">
+                            <div class="menu__card">
+                                <div class="menu__img">
+                                    <img src="./assets/img/menu6.png" alt="">
+                                </div>
+
+                                <div class="menu__info">
+                                    <h3 class="menu__name">Delicious Burger</h3>
+                                    <p class="menu__desc">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+                                    <div class="menu__option">
+                                        <span class="menu__price">$30</span>
+                                        <a href="" class="menu__cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu__food m-6 col l-4"  data-food="burger">
+                            <div class="menu__card">
+                                <div class="menu__img">
+                                    <img src="./assets/img/menu7.png" alt="">
+                                </div>
+
+                                <div class="menu__info">
+                                    <h3 class="menu__name">Delicious Burger</h3>
+                                    <p class="menu__desc">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+                                    <div class="menu__option">
+                                        <span class="menu__price">$30</span>
+                                        <a href="" class="menu__cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu__food m-6 col l-4"  data-food="burger">
+                            <div class="menu__card">
+                                <div class="menu__img">
+                                    <img src="./assets/img/menu8.png" alt="">
+                                </div>
+
+                                <div class="menu__info">
+                                    <h3 class="menu__name">Delicious Burger</h3>
+                                    <p class="menu__desc">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+                                    <div class="menu__option">
+                                        <span class="menu__price">$30</span>
+                                        <a href="" class="menu__cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu__food m-6 col l-4"  data-food="pasta">
+                            <div class="menu__card">
+                                <div class="menu__img">
+                                    <img src="./assets/img/menu9.png" alt="">
+                                </div>
+
+                                <div class="menu__info">
+                                    <h3 class="menu__name">Delicious Burger</h3>
+                                    <p class="menu__desc">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+                                    <div class="menu__option">
+                                        <span class="menu__price">$30</span>
+                                        <a href="" class="menu__cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu__view">
+                        <button class="food-btn">View More</button>
+                    </div>
+                </section>
+            </div>
+
+            <!-- About -->
+            <section id="about" class="about">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col c-12 m-6 l-6">
+                            <div class="about__img">
+                                <img src="./assets/img/about.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col c-12 m-6 l-6">
+                        <div class="about__info">
+                                <div>
+                                    <h2 class="about__title">We Are Burger King</h2>
+                                    <p class="about__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All</p>
+                                    <button class="food-btn">Read More</button>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Book -->
+            <section id="book" class="book">
+                <div class="grid wide">
+                    <h1 class="book__title">Book A Table</h1>
+
+                    <div class="row">
+                        <div class="col c-12 m-6 l-6">
+                            <div class="book__form">
+                                <input type="text" class="book__input" placeholder="Your Name">
+                                <input type="text" class="book__input" placeholder="Your Phone Number">
+                                <input type="text" class="book__input" placeholder="Your Email">
+                                
+                                <div class="book__option-box">
+                                    <div class="book__option-field">
+                                        <span>How many persons?</span>
+                                        <i class="book__option-icon fa-solid fa-angle-down"></i>
+                                    </div>
+
+                                    <ul class="book__option-list">
+                                        <h4 class="book__option-title">How many persons?</h4>
+                                        <li class="book__option-item">2</li>
+                                        <li class="book__option-item">3</li>
+                                        <li class="book__option-item">4</li>
+                                        <li class="book__option-item">5</li>
+                                        <li class="book__option-item">6</li>
+                                    </ul>
+                                </div>
+
+                                <input type="date" name="" id="" class="book__input-date">
+                                <button class="food-btn">Book now</button>
+                            </div>
+                        </div>
+
+                        <div class="col c-12 m-6 l-6">
+                            <div class="book__map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62714.754242847644!2d106.6146552699987!3d10.759731464457632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529fdffb3277d%3A0xdccdcff14d5817cc!2sBurger%20King!5e0!3m2!1svi!2s!4v1648386815336!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- customer -->
+            <section class="customer grid wide">
+                <h1 class="customer__title">What Says Our Customers</h1>
+
+                <div class="swiper2">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper mg-15">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="customer__card">
+                                <div class="customer__form">
+                                    <p class="customer__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum a, ab iure inventore expedita minus? Ea consequuntur facilis quisquam voluptate harum quam voluptas commodi incidunt tenetur ratione, quibusdam, ipsum iure.</p>
+                                    <h3 class="customer__name">Vin</h3>
+                                    <span>Fullstack Dev</span>
+                                </div>
+
+                                <div class="customer__img">
+                                    <img src="./assets/img/customer2.jpg" alt="">
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="customer__card">
+                                <div class="customer__form">
+                                    <p class="customer__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum a, ab iure inventore expedita minus? Ea consequuntur facilis quisquam voluptate harum quam voluptas commodi incidunt tenetur ratione, quibusdam, ipsum iure.</p>
+                                    <h3 class="customer__name">Vin</h3>
+                                    <span>Fullstack Dev</span>
+                                </div>
+
+                                <div class="customer__img">
+                                    <img src="./assets/img/customer1.jpg" alt="">
+                                </div>
+                                
+                            </div>   
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="customer__card">
+                                <div class="customer__form">
+                                    <p class="customer__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum a, ab iure inventore expedita minus? Ea consequuntur facilis quisquam voluptate harum quam voluptas commodi incidunt tenetur ratione, quibusdam, ipsum iure.</p>
+                                    <h3 class="customer__name">Duyen Huynh</h3>
+                                    <span>Traveller</span>
+                                </div>
+
+                                <div class="customer__img">
+                                    <img src="./assets/img/customer3.jpg" alt="">
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-btn">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    
+                </div>
+            </section>
+            
+        </div>
+
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col c-12 m-4 l-4">
+                        <div class="footer__col">
+                            <h4 class="footer__heading">Contact Us</h4>
+
+                            <div class="footer__wrap">
+                                <a class="footer__contact" href=""><i class="fa-solid fa-location-dot"></i> Location</a>
+                                <a class="footer__contact" href="" ><i class="fa-solid fa-phone"></i> +84 031232324</a>
+                                <a class="footer__contact" href="" ><i class="fa-solid fa-envelope"></i> huynhthevinh.work@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col c-12 m-4 l-4">
+                        <div class="footer__col">
+                            <a href=""><img src="./assets/img/logo.png" alt="" class="footer__logo"></a>
+
+                            <div class="footer__wrap">
+                                <p class="footer__about">Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with</p>
+                                <div class="footer__socials">
+                                    <a href="" class="footer__icon"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="" class="footer__icon"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="" class="footer__icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="" class="footer__icon"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="" class="footer__icon"><i class="fa-brands fa-pinterest-p"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col c-12 m-4 l-4">
+                        <div class="footer__col">
+                            <h4 class="footer__heading">Opening Hours</h4>
+                            
+                            <div class="footer__wrap">
+                                <p class="footer__hours">Everyday</p>
+                                <p class="footer__hours">10.00 Am - 10.00 Pm</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="footer__copyright">
+                    <p class="footer__text">© 2022 All Rights Reserved By Free Html Templates</p>
+                    <p class="footer__text">© Distributed By ThemeWagon</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/swiper.js"></script>
+    
+
+</body>
+</html>
