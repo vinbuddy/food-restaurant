@@ -131,8 +131,8 @@ function activeCurrentSection() {
 
 function setCurrentTime() {
     let date = new Date()
-    let currentDate = date.toISOString().slice(0, 10) // lấy ngày và cắt chuỗi
-    let currentTime = date.toISOString().slice(11, 16)
+    let currentDate = new Date(date.getTime() - (date.getTimezoneOffset() * 60000)).toISOString().slice(0, 10) // lấy ngày và cắt chuỗi
+    let currentTime = new Date(date.getTime() - (date.getTimezoneOffset() * 60000)).toISOString().slice(11, 16)
     window.onload = function () {
         inputDate.value = currentDate
         inputTime.value = currentTime
