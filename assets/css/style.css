@@ -377,9 +377,11 @@
 
 .book__input-date {
     width: 100%;
+
+    /* fix display on safari */
     display:block;
-  
-    /* Solution display on safari */
+    content: attr(placeholder);
+    color: #222831;
     -webkit-appearance: textfield;
     -moz-appearance: textfield;
     min-height: 53.2px; 
