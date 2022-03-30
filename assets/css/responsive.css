@@ -646,6 +646,10 @@
         margin: 14px 0;
     }
 
+    .book__btn {
+        margin-top: 14px;
+    }
+
     .book__option-field {
         margin-bottom: 14px;
     }
@@ -799,6 +803,10 @@
     .book__title,
     .book__btn {
         text-align: center;
+    }
+
+    .book__map {
+        margin-top: 40px;
     }
 
     .about__img {

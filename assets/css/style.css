@@ -382,9 +382,6 @@
     outline: 3px solid var(--primary-color);
 }
 
-.book__option-time {
-}
-
 .book__input-date {
     width: 100%;
     font-size: 16px;
