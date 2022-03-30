@@ -398,6 +398,7 @@
 
     /* fix display on safari */
     display:block;
+    color: #222831;
     background-color: #fff;
     -webkit-appearance: textfield;
     -moz-appearance: textfield;
