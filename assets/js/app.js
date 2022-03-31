@@ -140,6 +140,8 @@ function setCurrentTime() {
 
 }
 
+
+
 function start() {
     filterFood()
     select()
