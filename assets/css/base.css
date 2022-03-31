@@ -95,6 +95,7 @@ input:-webkit-autofill:active  {
     position: unset !important;
     text-align: unset !important;
     margin-top: 100px;
+    outline: none !important;
 }
 
 .swiper-btn {
