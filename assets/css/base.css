@@ -33,6 +33,14 @@ html {
     margin: 0 -15px;
 }
 
+/* change autofill on IOS */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+    background-color: #fff !important;
+}
+
 .header__item.header__item--active {
     color: #ffbe33;
 }
