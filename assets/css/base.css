@@ -81,11 +81,13 @@ input:-webkit-autofill:active  {
     height: 12px !important;
     background-color: #fff !important;
     opacity: 1 !important;
+    outline: none !important;
 }
 
 .swiper-pagination-bullet-active {
     width: 20px !important;
     height: 20px !important;
+    outline: none !important;
     background-color: var(--primary-color) !important;
     position: relative;
     top: 3px;
@@ -95,7 +97,6 @@ input:-webkit-autofill:active  {
     position: unset !important;
     text-align: unset !important;
     margin-top: 100px;
-    outline: none !important;
 }
 
 .swiper-btn {
